@@ -43,8 +43,7 @@ exec \"\$@\"" >/entrypoint.sh && \
 ################################################################################
 # verify apt-key sha256sum, add repo, install XL C/C++ for Linux, Community Edition
 ################################################################################
-RUN export DEBIAN_FRONTEND=noninteractive && \
-  apt-get update && apt-get install -y wget && \
+RUN apt-get update && apt-get install -y wget && \
   wget -q "$XLC_REPO_URL/ubuntu/public.gpg" && \
   echo "$XLC_REPO_KEY_SHA256SUM public.gpg"| sha256sum -c - && \
   apt-key add public.gpg && \
@@ -57,8 +56,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
 ################################################################################
 # install development tools
 ################################################################################
-RUN export DEBIAN_FRONTEND=noninteractive && \
-  apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y \
     vim \
     make \
     autoconf \
