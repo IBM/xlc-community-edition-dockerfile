@@ -56,4 +56,4 @@ DCO 1.1 Signed-off-by: Ray Kivisto rkivisto at ca.ibm.com
 ## License
 
 The Dockerfile is licensed under [Apache License, Version 2.0](https://github.com/IBM/xlc-community-edition-dockerfile/blob/master/LICENSE).  
-XL C/C++ Community Edition is licensed under the [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?li_formnum=L-JYIP-AB8RJN).
+XL C/C++ Community Edition is licensed under the [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?li_formnum=L-JYIP-AEMRYC).
