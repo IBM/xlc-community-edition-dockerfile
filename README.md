@@ -2,7 +2,7 @@
 
 ## Overview
 
-This image contains the XL C/C++ for Linux, Community Edition compiler, it's installation dependencies, and some common development tools (vim, make, autoconf, automake, cmake).
+This image contains the XL C/C++ for Linux, Community Edition compiler, it's installation dependencies, and some common development tools (vim-tiny, make, autoconf, automake).
 
 For the details how this image was built, see [xlc-community-edition-dockerfile](https://github.com/IBM/xlc-community-edition-dockerfile).
 This image does not use docker hub automated builds because they are currently not available for the ppc64le architecture.
