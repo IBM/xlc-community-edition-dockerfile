@@ -20,7 +20,7 @@ MAINTAINER Ray Kivisto, XL Compiler Build, Package, Install team - http://ibm.bi
 
 ENV XLC_REPO_URL http://public.dhe.ibm.com/software/server/POWER/Linux/xl-compiler/eval/ppc64le
 ENV XLC_REPO_KEY_SHA256SUM e0eba411ed1cbf48fdab9e03dfc159a280bd728e716dd408ef321e42ac3ae552
-ENV XLC_VRM 13.1.4
+ENV XLC_VRM 13.1.5
 
 ################################################################################
 # The entrypoint is a script that will interactively display the license text and then configure the compiler.
@@ -45,6 +45,7 @@ exec \"\$@\"" >/entrypoint.sh && \
 ################################################################################
 RUN apt-get update && apt-get install -y wget && \
   wget -q "$XLC_REPO_URL/ubuntu/public.gpg" && \
+  apt-get purge -y --auto-remove wget && \
   echo "$XLC_REPO_KEY_SHA256SUM public.gpg"| sha256sum -c - && \
   apt-key add public.gpg && \
   rm public.gpg && \
@@ -57,11 +58,10 @@ RUN apt-get update && apt-get install -y wget && \
 # install development tools
 ################################################################################
 RUN apt-get update && apt-get install -y \
-    vim \
+    vim-tiny \
     make \
     autoconf \
-    automake \
-    cmake; \
+    automake && \
   rm -rf /var/lib/apt/lists/* && \
   apt-get clean
 

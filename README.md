@@ -2,7 +2,7 @@
 
 ## Overview
 
-This image contains the XL C/C++ for Linux, Community Edition compiler, it's installation dependencies, and some common development tools (vim, make, autoconf, automake, cmake).
+This image contains the XL C/C++ for Linux, Community Edition compiler, it's installation dependencies, and some common development tools (vim-tiny, make, autoconf, automake).
 
 For the details how this image was built, see [xlc-community-edition-dockerfile](https://github.com/IBM/xlc-community-edition-dockerfile).
 This image does not use docker hub automated builds because they are currently not available for the ppc64le architecture.
@@ -56,4 +56,4 @@ DCO 1.1 Signed-off-by: Ray Kivisto rkivisto at ca.ibm.com
 ## License
 
 The Dockerfile is licensed under [Apache License, Version 2.0](https://github.com/IBM/xlc-community-edition-dockerfile/blob/master/LICENSE).  
-XL C/C++ Community Edition is licensed under the [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?li_formnum=L-JYIP-AB8RJN).
+XL C/C++ Community Edition is licensed under the [International License Agreement for Non-Warranted Programs](http://www14.software.ibm.com/cgi-bin/weblap/lap.pl?li_formnum=L-JYIP-AEMRYC).
