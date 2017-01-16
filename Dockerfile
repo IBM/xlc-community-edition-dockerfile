@@ -49,7 +49,7 @@ RUN apt-get update && apt-get install -y wget && \
   echo "$XLC_REPO_KEY_SHA256SUM public.gpg"| sha256sum -c - && \
   apt-key add public.gpg && \
   rm public.gpg && \
-  echo "deb $XLC_REPO_URL/ubuntu/ trusty main" > /etc/apt/sources.list.d/ibm-xl-compiler-eval.list && \
+  echo "deb $XLC_REPO_URL/ubuntu/ xenial main" > /etc/apt/sources.list.d/ibm-xl-compiler.list && \
   apt-get update && apt-get install -y \
     "xlc.$XLC_VRM" \
     "xlc-license-community.$XLC_VRM"
